@@ -2,8 +2,8 @@ import Dashboard from "views/Dashboard.js";
 import Notifications from "views/Notifications.js";
 import Icons from "views/Icons.js";
 import Typography from "views/Typography.js";
-import TableList from "views/TableList.js";
-import Maps from "views/Maps.js";
+import TableList from "views/Dash-Publications";
+import Maps from "views/Dash-Projets";
 
 import UserPage from "views/UserPage.js";
 

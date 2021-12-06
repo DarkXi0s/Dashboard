@@ -75,22 +75,8 @@ gulp.task("licenses", async function () {
   gulp
     .src("build/static/css/*chunk.css", { base: "./" })
     .pipe(
-      gap.prependText(`/*!
-
-=========================================================
-* Now UI Dashboard React - v1.5.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/now-ui-dashboard-react
-* Copyright 2021 Creative Tim (http://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/`)
+      gap.prependText(`
+`)
     )
     .pipe(gulp.dest("./", { overwrite: true }));
   return;

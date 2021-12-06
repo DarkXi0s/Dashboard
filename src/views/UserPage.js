@@ -1,20 +1,4 @@
-/*!
 
-=========================================================
-* Now UI Dashboard React - v1.5.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/now-ui-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/now-ui-dashboard-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 
 // reactstrap components
@@ -91,9 +75,9 @@ function User() {
               <CardBody>
                 <Form>
                   <Row>
-                    <Col className="pr-1" md="5">
+                    <Col  md="12">
                       <FormGroup>
-                        <label>Company (disabled)</label>
+                        <label>Application</label>
                         <Input
                           defaultValue="LOGOS-Penser Autrement Inc."
                           disabled
@@ -102,7 +86,7 @@ function User() {
                         />
                       </FormGroup>
                     </Col>
-                    <Col className="px-1" md="3">
+                    <Col className="pr-1" md="4">
                       <FormGroup>
                         <label>Username</label>
                         <Input
@@ -115,7 +99,13 @@ function User() {
                     <Col className="pl-1" md="4">
                       <FormGroup>
                         <label>Mot de pass</label>
-                        <Input placeholder="Email" type="email" />
+                        <Input placeholder="Mot de pass" type="text" />
+                      </FormGroup>
+                    </Col>
+                    <Col className="pl-1" md="4">
+                      <FormGroup>
+                        <label>deuxième Mot de pass</label>
+                        <Input placeholder="deuxième Mot de pass" type="text" />
                       </FormGroup>
                     </Col>
                   </Row>
@@ -152,7 +142,9 @@ function User() {
                         />
                       </FormGroup>
                     </Col>
-                    <Col md="12">
+                    </Row>
+                    <Row>
+                    <Col className="pr-1" md="6">
                       <FormGroup>
                         <label htmlFor="exampleInputEmail1">
                           Email address
@@ -160,15 +152,21 @@ function User() {
                         <Input
                           defaultValue="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
                           placeholder="Home Address"
-                          type="text"
+                          type="email"
                         />
                       </FormGroup>
                     </Col>
-                  </Row>
-                  <Row>
+                    <Col className="pl-1" md="6">
+                      <FormGroup>
+                        <label>Téléphone</label>
+                        <Input placeholder="Téléphone" type="text" />
+                      </FormGroup>
+                    </Col>
+                  
+                  
                     <Col className="pr-1" md="4">
                       <FormGroup>
-                        <label>City</label>
+                        <label>Ville</label>
                         <Input
                           defaultValue="Mike"
                           placeholder="City"
@@ -186,12 +184,7 @@ function User() {
                         />
                       </FormGroup>
                     </Col>
-                    <Col className="pl-1" md="4">
-                      <FormGroup>
-                        <label>Postal Code</label>
-                        <Input placeholder="ZIP Code" type="number" />
-                      </FormGroup>
-                    </Col>
+                    
                   </Row>
                   <Row>
                     <Col md="12">
